@@ -1,0 +1,33 @@
+<% if scribbles_streams.empty? %>
+<h3> No Posted </h3>
+<% else %>
+<% scribbles_streams.each do |scribble| %>
+<div class="scribblebody">
+  <div class="row">
+    <div class="span1">
+      <div class="scribbleimg"><img src="assets/default_avatar.png" class="img-circle" style='width:50px;height:50px'/></div>
+      <small><%= scribble.posted_by %></small>
+    </div>
+    <div class="span8">
+      <div class="votebox">
+        <div class="row">
+          <div class="scribbletext span6">
+            <blockquote>
+              <p><%= scribble.post %></p>            
+            </blockquote>           
+          </div>
+          <div class="pull-right span2">
+            <a href="" id="<%= scribble.id %>" name="up" class="votes">
+            <div class='up'></div><i class="icon-thumbs-up"></i> <%= scribble.ups %> Likes </a>    
+            <a href=""  id="<%= scribble.id %>"  name="down" class="votes">
+            <div class='down'></div><i class="icon-thumbs-down"></i> <%= scribble.downs %> Dislikes</a>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <% end %>
+    <% end %>
+

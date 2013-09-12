@@ -1,0 +1,16 @@
+<%= form_for(@scribble) do |f| %>
+<br />
+ <div class="row">
+ 	<div class="span2">
+ 		<p class="pull-right">What's up?</p>
+ 	</div>
+   	<div class="span4">   		
+    	<%= f.text_field :post, :class => 'span4' %>
+	</div>
+    <div class="span3">
+		<div class="actions" id="refreshscribbles">
+    		<%= f.submit 'Post', :class => 'btn btn-success' %>
+		</div>
+	</div>
+	</div>
+<% end %>
