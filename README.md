@@ -1,4 +1,4 @@
 ChulaBook
 =========
 
-ChulaBook is a social network project of student in Web Application Programming Class.
+ChulaBook is a the project of my class. It's my first project that developed by ruby on rails.
